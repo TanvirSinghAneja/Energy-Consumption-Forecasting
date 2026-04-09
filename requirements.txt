@@ -2,7 +2,6 @@ pandas
 numpy
 matplotlib
 seaborn
-random
 statsmodels
 pickle
 scikit-learn==1.6.1
