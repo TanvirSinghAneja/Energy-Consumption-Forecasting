@@ -3,8 +3,8 @@ numpy
 matplotlib
 seaborn
 statsmodels
-pickle
 scikit-learn==1.6.1
 tensorflow
 streamlit
 pyngrok
+pillow
