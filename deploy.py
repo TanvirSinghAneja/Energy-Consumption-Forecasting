@@ -165,7 +165,7 @@ with tab3:
 with tab4:
   import pandas as pd
   import matplotlib.pyplot as plt
-  df=pd.read_csv('/content/forecast.csv',parse_dates=True,index_col=0)
+  df=pd.read_csv('forecast.csv',parse_dates=True,index_col=0)
   df['date']=pd.to_datetime(df.index.normalize())
   df['day']=df.index.day
   df['day_name']=df.index.day_name()
