@@ -183,7 +183,7 @@ with tab4:
       plt.xlabel('Datetime')
       plt.ylabel('Energy Consumption')
       for x in range(len(df['use'])):
-        mm=df['use'][x]
+        mm=df['use'].iloc[x]
         if mm==df['use'].min() or mm==df['use'].max():
           plt.text(df.index[x],mm,round(mm),ha='center',va='bottom')
       st.pyplot(plt)
@@ -195,7 +195,7 @@ with tab4:
       plt.xlabel('Datetime')
       plt.ylabel('Energy Consumption')
       for x in range(len(hr)):
-        mm=hr['mean'][x]
+        mm=hr['mean'].iloc[x]
         if mm==hr['mean'].min() or mm==hr['mean'].max():
           plt.text(hr.index[x],mm,round(mm),ha='center',va='bottom')
       st.pyplot(plt)
@@ -220,7 +220,7 @@ with tab4:
       plt.xlabel('Day')
       plt.ylabel('Energy Consumption')
       for x in range(len(wk)):
-        mm=wk['mean'][x]
+        mm=wk['mean'].iloc[x]
         if mm==wk['mean'].min() or mm==wk['mean'].max():
           plt.text(wk.index[x],mm,round(mm),ha='center',va='bottom')
       st.pyplot(plt)
